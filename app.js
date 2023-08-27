@@ -28,7 +28,7 @@ const deadline = document.querySelector(".deadline")
 const items = document.querySelectorAll(".box h4")
 
 
-let futureDate = new Date(2023,5,15,15,30,0);
+let futureDate = new Date(2024,5,15,15,30,0);
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
@@ -83,7 +83,7 @@ items.forEach(function (item, index) {
 
 if (t < 0) {
     clearInterval(countdown);
-    deadline.innerHTML = `h4 class="expired">sorry, this giveaway has expired</h4>`
+    deadline.innerHTML = `<h4 class="expired">sorry, this giveaway has expired</h4>`
 }
 
 
